@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Canva+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Ticketing.css">
+    <title>Ticketing.com</title>
+</head>
+<body>
+    <header>
+        <h1>Ticket.com</h1>
+        <h5>Your Gateway to Hassle-Free Bus Travel!</h5>
+    </header>
+
+    <nav>
+        <button type="button">Book Ticket</button>
+        <button type="button">My Bookings</button>
+        <button type="button">Bus Operators</button>
+        <button type="button">Destinations</button>
+        <button type="button">Contact</button>
+    </nav>
+
+    <div class="Register">
+        <button type="button" class="Sign-in">Sign in</button>
+        <button type="button" class="Register-button">Register</button>
+    </div>
+
+    <section class="items">
+        <div class="trip-type">
+            <label class="Radio">
+                <input type="radio" name="trip" value="one-way"> One way
+            </label>
+            <label class="Radio">
+                <input type="radio" name="trip" value="round-trip"> Round trip
+            </label>
+        </div>
+        <div class="from">
+            <select>
+                <option value="0" disabled selected>From:</option>
+                <option value="1">Batangas</option>
+                <option value="2">Boracay</option>
+                <option value="3">Bicol</option>
+                <option value="4">Palawan</option>
+                <option value="5">Baguio</option>
+                <option value="6">Batanes</option>
+                <option value="7">Manila</option>
+            </select>
+            </div>
+            <div class="to">
+                <select>
+                    <option value="0" disabled selected>To:</option>
+                    <option value="1">Batangas</option>
+                    <option value="2">Boracay</option>
+                    <option value="3">Bicol</option>
+                    <option value="4">Palawan</option>
+                    <option value="5">Baguio</option>
+                    <option value="6">Batanes</option>
+                    <option value="7">Manila</option>
+                </select>
+            </div>
+        </div>
+        <img src="1.png" alt-="Back to Back Arrow" class="Arrow">
+        
+        <div class="departure">
+            <label for="departure-date"></label>
+            <input type="date" id="departure-date">
+        </div>
+
+        <div class="return">
+            <label for="return-date">Return Date</label>
+            <input type="date" id="return-date">
+        </div>
+
+        <div class="pax">
+            <label for="no-pax">No. Pax</label>
+            <input type="number" id="no-pax" min="1" max="20">
+        </div>
+
+        <button type="button">Book</button>
+    </section>
+
+    <footer>
+        <h3>Explore Our Featured Routes</h3>
+    </footer>
+</body>
+</html>

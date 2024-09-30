@@ -1,0 +1,208 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+header {
+    font-family: 'Canva-Sans', 'Open-Sans';
+    background-color: #d9d9d9;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: -35px;
+
+}
+header h5{
+    font-family: "Open Sans";
+    color:#ffa500;
+    margin-top: -40px;
+    font-size: 17px;
+    padding-left: 100px;
+}
+header h1{
+    font-size: 50px;
+    padding-left: 40px;
+    font-family: "Roboto";
+    font-weight: bold;
+    display: flex;
+}
+
+body {
+    font-family: "Canva-Sans", "Open-Sans", sans-serif;
+    background-image: url('123.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100%;
+}
+nav {
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    margin-top: -80px;
+    margin-right: flex-end;
+    margin-left: 500px;
+    gap: 1px;
+}
+
+.nav-buttons {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    display: flex;
+    gap: 50px;
+    margin-left: 100px;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    padding: 5px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, border-radius 0.3s;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+nav button:hover {
+    background-color: #a6a6a6;
+    border-radius: 20px;
+}
+.Register {
+    display: flex;                  
+    justify-content: flex-end;     
+    margin-top: -45px; 
+    gap: 1px;   
+    margin-right: 50px;               
+}
+
+.Sign-in, .Register-button {
+    display: absolute;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 10px; 
+    margin:10px;         
+    background-color: #a6a6a6; 
+    border-radius: 10px;
+    cursor: pointer;               
+    border: 2px;             
+    transition: background-color 0.3s, border-radius 0.3s; 
+
+}
+.Sign-in:hover {
+    background-color: #545454;    
+    color: white;   
+    border-radius: 15px;
+}
+
+.Register-button:hover {
+    background-color: #545454; 
+    color: white;
+    border-radius: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    padding: 10px;
+    padding-left: 0;
+    background-color: rgba(166, 166, 166, 0.90);
+    width: 85%;
+    margin: 200px auto 100vh auto;
+    border-radius: 30px;
+    
+}
+.trip-type{
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 15vh;
+
+}
+.from {
+    display: flex;
+    margin-top: 10px;
+    text-align: left; 
+    padding-left: 100px;
+    margin-left: 0;
+    position: relative;
+    border-color: black;
+    font-family: "Open Sans";
+}
+.to {
+    display: flex;
+    text-align: left;
+    position: relative;
+    border-color: #000;
+    align-items: center; 
+    margin-top: 10px;
+    padding-left: 100px;  
+    margin-left: 0;
+}
+
+.from label, .to label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #4a4a4a;
+}
+
+.from select, .to select {
+    width: 10%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000; 
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: none;
+    appearance: none;
+    outline: none;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+.from select:hover, .to select:hover {
+    background-color: rgb(74, 74, 74, 0.5);
+}
+
+.from select option, .to select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+}
+.Arrow{
+    width: 30px;
+    border: 0;
+    position: relative;
+    top: -30px;
+    margin-left: 27vh;
+    height: auto;
+
+}
+.Radio {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;     
+    gap: 2px;
+}
+
+.Radio input[type="radio"] {
+    margin-right: 10px; 
+}
+
+.Radio {
+    font-weight: bold;
+    font-size: 16px; 
+    color: #000000;      
+}
+
