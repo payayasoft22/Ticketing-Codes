@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
 }
+
 header {
     font-family: 'Canva-Sans', 'Open-Sans';
     background-color: #d9d9d9;
@@ -9,16 +10,18 @@ header {
     padding: 0;
     margin: 0;
     margin-top: -35px;
-
 }
-header h5{
+
+header h5 {
     font-family: "Open Sans";
-    color:#ffa500;
+    color: #ffa500;
     margin-top: -40px;
     font-size: 17px;
     padding-left: 100px;
+    font-weight: 900;
 }
-header h1{
+
+header h1 {
     font-size: 50px;
     padding-left: 40px;
     font-family: "Roboto";
@@ -30,11 +33,13 @@ body {
     font-family: "Canva-Sans", "Open-Sans", sans-serif;
     background-image: url('123.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1980px 1005px;
     background-position: center;
-    margin: 0;
-    height: 100%;
+    height: 800px;
+    min-height: 100vh;
+  
 }
+
 nav {
     font-weight: 100;
     display: flex;
@@ -71,27 +76,29 @@ button {
 nav button:hover {
     background-color: #a6a6a6;
     border-radius: 20px;
+    color: #fff;
 }
+
 .Register {
     display: flex;                  
-    justify-content: flex-end;     
+    justify-content: flex-end;      
     margin-top: -45px; 
     gap: 1px;   
     margin-right: 50px;               
 }
 
 .Sign-in, .Register-button {
-    display: absolute;
+    display: flex;
     font-family: "Open Sans", sans-serif;
     padding: 5px 10px; 
-    margin:10px;         
+    margin: 10px;         
     background-color: #a6a6a6; 
     border-radius: 10px;
     cursor: pointer;               
     border: 2px;             
     transition: background-color 0.3s, border-radius 0.3s; 
-
 }
+
 .Sign-in:hover {
     background-color: #545454;    
     color: white;   
@@ -105,64 +112,64 @@ nav button:hover {
 }
 
 .items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 90px;
-    padding: 10px;
-    padding-left: 0;
+    flex-wrap: wrap;
+    display: flex;            
+    justify-content: center;     
+    align-items: center;         
+    height: 110px;
     background-color: rgba(166, 166, 166, 0.90);
     width: 85%;
     margin: 200px auto 100vh auto;
-    border-radius: 30px;
-    
+    border-radius: 15px;
+    padding-top: 10px;
 }
-.trip-type{
+
+.trip-type {
+    margin-top: -80px;
     top: 0;
     left: 0;
     text-align: left;
-    padding-left: 50px;
-    margin-top: 15vh;
-
+    padding-left: 90px;
+    margin-bottom: 10px;
 }
+
 .from {
-    display: flex;
-    margin-top: 10px;
-    text-align: left; 
-    padding-left: 100px;
-    margin-left: 0;
-    position: relative;
-    border-color: black;
-    font-family: "Open Sans";
-}
-.to {
-    display: flex;
+    display: flex; 
     text-align: left;
-    position: relative;
-    border-color: #000;
-    align-items: center; 
+    padding-left: 8vh; 
+    font-family: "Open Sans";
     margin-top: 10px;
-    padding-left: 100px;  
-    margin-left: 0;
+    margin-left: -330px;
+    gap: 20px;
 }
 
-.from label, .to label {
+.from select {
+    margin-right: 20px;
+}
+
+.from select:last-child {
+    margin-right: 0;
+}
+
+.from label {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
     display: block;
-    color: #4a4a4a;
+    color: #333333;
 }
 
-.from select, .to select {
-    width: 10%;
+.from select,
+.Dates [type="date"]{
+    width: 20vh;
     padding: 5px;
     font-weight: bold;
     font-size: 16px;
-    color: #000; 
+    color: #333333;
     background-color: transparent;
     border: 2px solid #000;
     border-radius: 5px;
+    border-right: 100%;
     box-shadow: none;
     appearance: none;
     outline: none;
@@ -170,39 +177,166 @@ nav button:hover {
     cursor: pointer;
 }
 
-.from select:hover, .to select:hover {
-    background-color: rgb(74, 74, 74, 0.5);
+
+.from select:hover {
+    background-color: rgba(74, 74, 74, 0.5);
+    color: #fff;
 }
 
-.from select option, .to select option {
+.from select option {
     padding: 10px;
     background-color: #fff;
-    color: #000;
+    color: #000000;
 }
-.Arrow{
-    width: 30px;
-    border: 0;
-    position: relative;
-    top: -30px;
-    margin-left: 27vh;
-    height: auto;
 
-}
-.Radio {
-    text-align: left;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;     
-    gap: 2px;
+.Arrow {
+    width: 50px;
+    padding: 0;
+    margin-left: -10px;
+    height: auto;
+    margin-right: 25px;
+    align-self: center;
+    display: block;
 }
 
 .Radio input[type="radio"] {
+    width: 20px;
+    height: 20px;
     margin-right: 10px; 
+    cursor: pointer; 
 }
 
 .Radio {
-    font-weight: bold;
-    font-size: 16px; 
-    color: #000000;      
+    display: inline;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
 }
 
+.Location {
+    width: 15px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: -1vh;
+    margin-left: -4vh;
+    display: flex;
+}
+
+.sec-Location {
+    width: 15px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: -1vh;
+    margin-left: -4vh;
+    display: flex;
+}
+
+.types {
+    justify-content: flex-start;
+    gap: 20px;
+    cursor: default;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 18px; 
+    color: #000000;
+    height: 40px; 
+    margin-top: -9vh;
+    margin-left: 4vh;
+    margin-bottom: 0;
+    
+
+    
+
+}
+.Dates [type="date"]{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-top: 6px;
+}
+.Dates{
+    margin-top: 7vh;
+}
+.Dates label{
+    display: flex;
+    margin-top: 25px;
+    margin: 0;
+
+}
+
+.Dates label{
+    font-weight: 400;
+}
+
+
+.Click {
+    display: inline-flex;     
+    justify-content: center; 
+    align-items: center;        
+    border: 2px solid #000;
+    background-color: #545454;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: auto;      
+    transition: border-radius 0.3s;
+    margin: 0; 
+    padding: 5px;       
+}
+
+
+.Click [type="submit"] {
+    font-size: 14px;             
+    font-weight: bold;
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;   
+    margin: 0;
+}
+
+.Click [type="submit"]:hover {
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+.Calendar{
+    width: 10px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: -1vh;
+    display: flex;
+}
+.pax p{
+    justify-content: flex-start;
+    gap: 20px;
+    cursor: default;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 18px; 
+    color: #000000;
+    height: 40px; 
+    margin-top: -9vh;
+    margin-left: 4vh;
+    margin-bottom: 0;
+    
+
+}
+.footer {
+    font-weight: 900;
+    padding: 10px; 
+    background-color: #ffffff; 
+    color: rgb(184, 174, 174); 
+    text-align:center;
+    padding: 14vh;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+
+}
