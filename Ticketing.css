@@ -37,6 +37,7 @@ body {
     background-position: center;
     height: 800px;
     min-height: 100vh;
+    margin: 0;
   
 }
 
@@ -122,6 +123,7 @@ nav button:hover {
     margin: 200px auto 100vh auto;
     border-radius: 15px;
     padding-top: 10px;
+    margin-bottom: 0;
 }
 
 .trip-type {
@@ -218,7 +220,7 @@ nav button:hover {
     width: 15px;
     height: 50px;
     margin-right: 25px;
-    margin-top: -1vh;
+    margin-top: 3px;
     margin-left: -4vh;
     display: flex;
 }
@@ -227,7 +229,7 @@ nav button:hover {
     width: 15px;
     height: 50px;
     margin-right: 25px;
-    margin-top: -1vh;
+    margin-top: 3px;
     margin-left: -4vh;
     display: flex;
 }
@@ -276,67 +278,142 @@ nav button:hover {
     display: inline-flex;     
     justify-content: center; 
     align-items: center;        
-    border: 2px solid #000;
     background-color: #545454;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 15px 20px;
     width: auto;      
-    transition: border-radius 0.3s;
+    transition: border-radius 0.5s;
     margin: 0; 
-    padding: 5px;       
+    padding: 10px;       
 }
 
 
 .Click [type="submit"] {
-    font-size: 14px;             
+    margin-right: 5vh;
+    margin-left: 7vh;
+    font-size: 18px;             
     font-weight: bold;
     color: white;
     border: none;
+    padding: 15px 20px;
     background: none;
     cursor: pointer;
     padding: 5px;   
     margin: 0;
+    transition: border-radius 0.3s;
 }
 
+.Click:hover {
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+
+}
 .Click [type="submit"]:hover {
     color: rgb(0, 0, 0);
-    border-radius: 8px;
 }
 .Calendar{
+    margin-top: 6px;
     width: 10px;
     height: 40px;
     margin-right: 5px;
     margin-left: -1vh;
     display: flex;
 }
+.profile{
+    width: 10px;
+    height: 30px;
+    display: flex;
+    margin-left: 6vh;
+    margin-top: 10px;
+
+}
 .pax p{
-    justify-content: flex-start;
     gap: 20px;
     cursor: default;
     display: flex;
     align-items: center; 
     text-align: center;
-    font-weight: 400;
     font-family: sans-serif;
     font-size: 18px; 
     color: #000000;
     height: 40px; 
-    margin-top: -9vh;
-    margin-left: 4vh;
+    margin-top: -3vh;
+    margin-right: 5vh;
     margin-bottom: 0;
     
+}
+.pax select{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    margin: none;
 
 }
-.footer {
-    font-weight: 900;
-    padding: 10px; 
-    background-color: #ffffff; 
-    color: rgb(184, 174, 174); 
-    text-align:center;
-    padding: 14vh;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+.pax select{
+    border: 2px solid #000;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 17px;
+    font-size: 14px;
+    margin-right: 5vh;
+    text-align: center;
+    margin-left: 3vh;
+    font-weight: 400;
+    cursor: pointer;
+    font-weight: bold;
+}
+.footer-content {
+    margin-top: 23vh;
+    background-color: #d9d9d9;
+    padding: 15px;
+    text-align: center;
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: nowrap;
+}
 
+.footer-section {
+    flex: 1;
+    max-width: 250px; 
+    margin: 5px;
+    padding: 15px; 
+    background-color: #ffffcc; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section h4 {
+    cursor: default;
+    font-weight: bold;
+    font-size: 20px; 
+    margin-bottom: 15px; 
+}
+
+.footer-section h5 {
+    cursor: default;
+    font-weight: 600;
+    font-size: 16px; 
+    margin-bottom: 8px; 
+}
+
+.footer-section p {
+    color: #666; 
+    font-size: 14px; 
+    line-height: 1.4; 
+    cursor: default;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px; 
+    color: #ffa500; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #d77b00;
 }
