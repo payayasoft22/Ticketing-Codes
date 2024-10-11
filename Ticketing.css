@@ -13,8 +13,9 @@ header {
 }
 
 header h5 {
+    letter-spacing: 5px;
     font-family: "Open Sans";
-    color: #ffa500;
+    color: #5da944;
     margin-top: -40px;
     font-size: 17px;
     padding-left: 100px;
@@ -22,6 +23,7 @@ header h5 {
 }
 
 header h1 {
+    letter-spacing: 5px;
     font-size: 50px;
     padding-left: 40px;
     font-family: "Roboto";
@@ -408,7 +410,7 @@ nav button:hover {
 .read-more {
     display: inline-block;
     margin-top: 10px; 
-    color: #ffa500; 
+    color: #5da944; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
