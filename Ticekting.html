@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Canva+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Ticketing.css">
     <title>FairWheel</title>
-    <link rel="icon" href="window_logo.png"
-            type="image/x-icon" />
+    <link rel="icon" href="window_logo.png" type="image/x-icon" />
 </head>
 <body>
     <header>
+
+        <script src="Main.js"></script>
         <h1>FairWheel</h1>
         <h5>Safe Trip With A Fair Price</h5>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
 
-    <nav>
-        <button type="button">Book Ticket</button>
-        <button type="button">My Bookings</button>
-        <button type="button">Bus Operators</button>
-        <button type="button">Destinations</button>
-        <button type="button">Contact</button>
-    </nav>
+    <div class="nav-container" id="nav-links">
+        <nav class="nav-links">
+            <button type="button">Book Ticket</button>
+            <button type="button">My Bookings</button>
+            <button type="button">Bus Operators</button>
+            <button type="button">Destinations</button>
+            <button type="button">Contact</button>
+        </nav>
 
-    <div class="Register">
-        <button type="button" class="Sign-in">Sign in</button>
-        <button type="button" class="Register-button">Register</button>
+        <div class="Register">
+            <button type="button" class="Sign-in">Sign in</button>
+            <button type="button" class="Register-button">Register</button>
+        </div>
     </div>
-
     <section class="items">
         <div class="trip-type">
             <label class="Radio">
@@ -72,42 +78,44 @@
         <div class="types">
             <div class="Dates">
                 <label for="departure-date">Departure Date</label>
-                <input type="date" id="departure-date" placeholder="MM/DD/YY">
+                <div class="date-input">
+                    <input type="date" id="departure-date" placeholder="MM/DD/YY">
+                </div>
             </div>
-            <div class="Dates">
+            <div class="Dates" id="return-date">
                 <label for="return-date">Return Date</label>
-                <input type="date" id="return-date" placeholder="MM/DD/YY">
+                <div class="date-input">
+                    <input type="date" placeholder="MM/DD/YY">
+                </div>
             </div>
         </div>
         <div class="profile">
-            <img src="profile.png" alt="Profie-Icon">
-            </div>
+            <img src="profile.png" alt="Profile-Icon">
         </div>
         <div class="pax">
-           <p>No. of Passengers</p>
-           <select>
-            <option value="0">1</option>
-            <option value="1">2</option>
-            <option value="2">3</option>
-            <option value="3">4</option>
-            <option value="4">5</option>
-            <option value="5">6</option>
-            <option value="6">7</option>
-            <option value="7">8</option>
-            <option value="8">9</option>
-            <option value="9">10</option>
-            <option value="10">11</option>
-            <option value="11">12</option>
-            <option value="12">13</option>
-            <option value="13">14</option>
-            <option value="14">15</option>
-            <option value="15">16</option>
-            <option value="16">17</option>
-            <option value="17">18</option>
-            <option value="18">19</option>
-            <option value="19">20</option>
-        </select>
-        
+            <p>No. of Passengers</p>
+            <select>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+                <option value="5">6</option>
+                <option value="6">7</option>
+                <option value="7">8</option>
+                <option value="8">9</option>
+                <option value="9">10</option>
+                <option value="10">11</option>
+                <option value="11">12</option>
+                <option value="12">13</option>
+                <option value="13">14</option>
+                <option value="14">15</option>
+                <option value="15">16</option>
+                <option value="16">17</option>
+                <option value="17">18</option>
+                <option value="18">19</option>
+                <option value="19">20</option>
+            </select>
         </div>
         <div class="Click">
             <button type="submit" value="Book">Book</button>
@@ -133,7 +141,5 @@
             <a class="read-more" href="#">Read More →</a>
         </div>
     </div>
-    
-    
 </body>
 </html>
